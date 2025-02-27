@@ -1,11 +1,18 @@
 package com.senac.bingo.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
+
+@Entity
 public class Estabelecimento {
 
+    @Id
     private Long cnpj;
     private String razaoSocial;
     private String email;
     private String telefone;
+    @ManyToOne
     private Endereco endereco;
 
     public Long getCnpj() {
