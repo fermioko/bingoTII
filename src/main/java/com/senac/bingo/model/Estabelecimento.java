@@ -1,5 +1,6 @@
 package com.senac.bingo.model;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
@@ -11,7 +12,7 @@ public class Estabelecimento {
     private String razaoSocial;
     private String email;
     private String telefone;
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     private Endereco endereco;
 
     public Long getCnpj() {

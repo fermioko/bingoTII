@@ -26,6 +26,10 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa:3.4.3")
 	// https://mvnrepository.com/artifact/com.mysql/mysql-connector-j
 	implementation("com.mysql:mysql-connector-j:9.2.0")
+	implementation("org.springframework.boot:spring-boot-starter-validation")
+	// https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-core
+	implementation("org.hibernate.orm:hibernate-core:6.6.10.Final")
+
 }
 
 tasks.withType<Test> {
